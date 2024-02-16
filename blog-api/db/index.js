@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/hci")
+  .connect("mongodb+srv://steamzamenabycomi:ADMIN1@cluster0.hgb9ltw.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     console.log("db is connected");
   })

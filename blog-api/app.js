@@ -9,7 +9,7 @@ const { handleAsyncError } = require("./middlewares/error");
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: ["http://localhost:3000","exp://192.168.0.19:8081","http://localhost:8081"] }));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use("/api/post", postRouter);
